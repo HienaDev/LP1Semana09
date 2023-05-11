@@ -5,7 +5,7 @@ namespace AnimalPerspective
     public class Dog : Animal, IMammal
     {
 
-        public override float NumberOfNipples => 8;
+        public int NumberOfNipples => 8;
 
         public override string Sound()
         {

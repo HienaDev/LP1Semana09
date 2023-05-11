@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace AnimalPerspective
 {
-    public class Bat : Animal, IMammal
+    public class Bat : Animal, IMammal, ICanFly
     {
 
-        public override float NumberOfNipples => 2;
+        public  int NumberOfNipples => 2;
+        public  int NumberOfWings => 2;
 
         public override string Sound()
         {

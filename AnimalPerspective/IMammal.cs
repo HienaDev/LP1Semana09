@@ -7,6 +7,6 @@ namespace AnimalPerspective
 {
     public interface IMammal
     {
-        public abstract int NumberOfNipples { get; }
+        public int NumberOfNipples { get; }
     }
 }
