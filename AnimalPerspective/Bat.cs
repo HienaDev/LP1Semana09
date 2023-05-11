@@ -7,6 +7,12 @@ namespace AnimalPerspective
 {
     public class Bat : Animal, IMammal
     {
-        
+
+        public override float NumberOfNipples => 2;
+
+        public override string Sound()
+        {
+            return base.Sound() + "<Click>";
+        }
     }
 }

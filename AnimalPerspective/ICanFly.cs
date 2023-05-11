@@ -5,11 +5,8 @@ using System.Threading.Tasks;
 
 namespace AnimalPerspective
 {
-    public class Bee : Animal
+    public interface ICanFly
     {
-        public override string Sound()
-        {
-            return base.Sound() + "Bzzz";
-        }
+        
     }
 }
