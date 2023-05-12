@@ -132,9 +132,16 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            Console.WriteLine("What's the max score?");
+            int maxScore = int.Parse(Console.ReadLine());
+
+            foreach (Player player in playerList)
+            {
+                if (player.Score > maxScore)
+                {
+                    Console.Write($"Name: {player.Name} Score: {player.Score}");
+                }
+            }
         }
 
         /// <summary>
